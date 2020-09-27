@@ -198,9 +198,9 @@ client.on('message', message =>{
                         }
                         if(counter == 0){
                             console.log(options.league);
-                  text.push('\n'+options.league+'  \n'+tod.setHours( tod.getHours()+2)+" : "+min+erg+" "+play.homeTeam.name +" : "+play.awayTeam.name+"\n");
+                  text.push('\n'+options.league+'  \n'+tod.getHours(tod.setHours(tod.getHours()+2))+" : "+min+erg+" "+play.homeTeam.name +" : "+play.awayTeam.name+"\n");
                 }else{
-                    text.push(tod.setHours( tod.getHours()+2)+" : "+min+erg+" "+play.homeTeam.name +" : "+play.awayTeam.name+"\n"); 
+                    text.push(tod.setHours(tod.getHours(tod.setHours(tod.getHours()+2))+" : "+min+erg+" "+play.homeTeam.name +" : "+play.awayTeam.name+"\n"); 
                 }
                 counter++;
                  }

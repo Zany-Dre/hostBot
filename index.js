@@ -249,4 +249,4 @@ function ausgabe(text){
      // return "```Match-Fixtures \nBody text blah blah```"; 
     }
 
-client.login('NzUxMDIzNTcwNDA2MjExNTk1.X1DDNA.s3ZixnUYVmSeJVnKfeO9eayAgv8');
+client.login(process.env.TOKEN);
